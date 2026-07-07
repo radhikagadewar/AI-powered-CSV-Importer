@@ -1,0 +1,6 @@
+person_name,email_id,phone_no,business,city_name,state_name,country_name,lead_type,remarks,created_date
+Isabella Garcia,isabella@example.com,9876543225,Garcia Solutions,Surat,Gujarat,India,Good Lead,Wants product demo ASAP,2026-05-10 09:30:00
+Jack Robinson,jack@test.com,9876543226,Robinson Inc,Lucknow,Uttar Pradesh,India,Did Not Connect,No response to emails or calls,2026-05-11 14:15:00
+,invalid@test.com,,,Indore,Madhya Pradesh,India,Bad Lead,No name or phone provided,2026-05-12 16:45:00
+Lily Parker,lily@business.net,9876543227,Parker Consulting,Chandigarh,Punjab,India,Sale Done,Contract signed on 2026-05-13,2026-05-13 11:20:00
+Mason Wright,,9876543228,Wright Corp,Kochi,Kerala,India,Good Lead,Email not provided but interested via phone,2026-05-14 10:00:00
