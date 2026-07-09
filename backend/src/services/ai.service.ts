@@ -178,15 +178,15 @@ Return valid JSON only, no markdown formatting.`;
    * Sanitize a single record
    */
   private sanitizeRecord(record: CRMRecord): CRMRecord {
-    const sanitized: CRMRecord = {};
+    const sanitized: any = {}; // Change to any to avoid type errors
 
     // Sanitize all string fields
     Object.keys(record).forEach(key => {
-      const value = record[key as keyof CRMRecord];
+      const value = (record as any)[key];
       if (typeof value === 'string') {
-        sanitized[key as keyof CRMRecord] = sanitizeCSVValue(value.trim()) as any;
+        sanitized[key] = sanitizeCSVValue(value.trim());
       } else if (value !== undefined && value !== null) {
-        sanitized[key as keyof CRMRecord] = value as any;
+        sanitized[key] = value;
       }
     });
 
